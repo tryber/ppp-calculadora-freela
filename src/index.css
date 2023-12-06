@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* eu poderia resetar varias outras propriedades, tem alguns gigantes na internet */
+
+:root {
+  --gray: #f1f1f1;
+  --dark-gray: #6c747c;
+  --lime-1: #1db702;
+  --lime-2: #e1f2d5;
+  --lime-text: #f4fce3;
+  --green: #00362c;
+}
+
+/* o nome é meu, posso definir qualquer um, mas sempre usar algo que faça sentido */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
