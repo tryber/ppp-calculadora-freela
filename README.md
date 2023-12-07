@@ -101,3 +101,49 @@ const monthlyGrossIncome = grossAnnualSalary / monthsPerYear;
 ## Exemplo
 
 Para um desenvolvedor que trabalha 8 horas por dia, 5 dias por semana, 48 semanas por ano, com um salário líquido desejado de R$ 5.000,00, impostos mensais de R$ 70,00 e custo operacional mensal de R$ 1.000,00.
+
+## Calcular valor do projeto
+
+Para calcular o valor do projeto, você pode utilizar a seguinte fórmula:
+
+1. Valor da Hora de Trabalho (hourlyRate):
+
+```javascript
+const hourlyRate = /* valor da hora de trabalho */;
+```
+
+2. Quantas horas por dia você vai trabalhar no projeto (workedHoursPerDay):
+
+```javascript
+const workedHoursPerDay = /* horas trabalhadas por dia */;
+```
+
+3. Quantos dias você vai trabalhar no projeto (workedDays):
+
+```javascript
+const workedDays = /* dias trabalhados no projeto */;
+```
+
+4. Adicional de complexidade ou desconto (complexityAdjustment):
+
+```javascript
+const complexityAdjustment = /* adicional de complexidade ou desconto */;
+```
+
+5. Valor do Projeto (projectValue):
+
+```javascript
+const projectValue = hourlyRate * workedHoursPerDay * workedDays;
+```
+
+6. Valor do Projeto com Adicional/Desconto (projectValueWithAdjustment):
+
+```javascript
+const projectValueWithAdjustment = projectValue * (1 + complexityAdjustment);
+```
+
+7. Desconto ou Adicional (adjustment):
+
+```javascript
+const adjustment = projectValueWithAdjustment - projectValue;
+```
