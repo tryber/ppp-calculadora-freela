@@ -28,3 +28,76 @@ Para rodar o projeto localmente, execute:
 ```shell
 npm run dev
 ```
+
+# Cálculo do Valor da Hora de Trabalho como MEI
+
+Este documento descreve como calcular o valor da hora de trabalho para Microempreendedores Individuais (MEI), utilizando JavaScript, o imposto mensal varia de acordo com a atividade exercida e pode ser consultado na receita federal.
+
+## Variáveis e Cálculos
+
+**1. Semanas Trabalhadas por Ano (`workedWeeksPerYear`):**
+
+```javascript
+const totalWeeks = 52;
+const vacationWeeks = /* número de semanas de férias */;
+const workedWeeksPerYear = totalWeeks - vacationWeeks;
+```
+
+\*\*2. Dias Trabalhados por Ano (workedDaysPerYear):
+
+```javascript
+const workedDaysPerWeek = /* dias trabalhados por semana */;
+const workedDaysPerYear = workedWeeksPerYear * workedDaysPerWeek;
+```
+
+\*\*3. Horas Trabalhadas por Ano (workedHoursPerYear):
+
+```javascript
+const workedHoursPerDay = /* horas trabalhadas por dia */;
+const riskAdjustment = 0.9; // 10% de desconto para adicional de risco
+const workedHoursPerYear = workedDaysPerYear * workedHoursPerDay * riskAdjustment;
+```
+
+\*\*4. Salário Anual Líquido Desejado (netAnnualSalary):
+
+```javascript
+const monthlyEarningsGoal = /* quanto você quer ganhar por mês */;
+const monthsPerYear = 12;
+const netAnnualSalary = monthlyEarningsGoal * monthsPerYear;
+```
+
+\*\*5. Impostos por Tipo de Atividade (annualTaxes):
+
+```javascript
+const monthlyTax = /* imposto mensal baseado na atividade */;
+const annualTaxes = monthlyTax * monthsPerYear;
+```
+
+\*\*6. Custo Anual de Operação (annualOperatingCost):
+
+```javascript
+const monthlyOperatingCost = /* custo operacional mensal */;
+const annualOperatingCost = monthlyOperatingCost * monthsPerYear;
+```
+
+\*\*7. Salário Anual Bruto Necessário (grossAnnualSalary):
+
+```javascript
+const grossAnnualSalary = netAnnualSalary + annualTaxes + annualOperatingCost;
+```
+
+\*\*8. Valor da Hora de Trabalho (hourlyRate):
+
+```javascript
+const hourlyRate = grossAnnualSalary / workedHoursPerYear;
+```
+
+\*\*9. Valor Bruto por Mês (monthlyGrossIncome):
+
+```javascript
+const monthlyGrossIncome = grossAnnualSalary / monthsPerYear;
+```
+
+## Exemplo
+
+Para um desenvolvedor que trabalha 8 horas por dia, 5 dias por semana, 48 semanas por ano, com um salário líquido desejado de R$ 5.000,00, impostos mensais de R$ 70,00 e custo operacional mensal de R$ 1.000,00.
