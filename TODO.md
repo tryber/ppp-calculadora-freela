@@ -1,7 +1,7 @@
 # Componentes
 
-Header
-InfoBar (título)
-Form** -> ResultValues** -> props
+Header ✅
+InfoBar (título) ✅
+Footer ✅
 Input
-Footer
+Form** -> ResultValues** -> props

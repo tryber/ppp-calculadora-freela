@@ -1,6 +1,6 @@
 # Calculadora de Freelancer
 
-Este projeto é uma calculadora de freelancers construída com React e Vite e transmitido ao vivo no Youtube na Trybe em Dezembro de 2023. É uma ferramenta útil para freelancers calcularem seus preços de serviços baseados em diferentes critérios.
+Este projeto é uma calculadora de freelancers construída com React e Vite e transmitido ao vivo no Youtube da Trybe em Dezembro de 2023. É uma ferramenta útil para freelancers calcularem seus preços de serviços baseados em diferentes critérios.
 
 ## Pré-requisitos
 

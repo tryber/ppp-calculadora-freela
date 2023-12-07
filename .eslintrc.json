@@ -1,3 +1,6 @@
 {
-	"extends": "@trybe/eslint-config-frontend/typescript"
+	"extends": "@trybe/eslint-config-frontend/typescript",
+	"rules": {
+		"max-len":"off"
+	}
 }

@@ -1,0 +1,20 @@
+.infobar {
+  background-color: var(--lime-1);
+  color: var(--lime-text);
+  padding: 16px 0;
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 700;
+  position: relative;
+}
+
+.infobar:after {
+  content: '';
+  position: absolute;
+  border-width: 20px 20px 0;
+  border-style: solid;
+  border-color: var(--lime-1) transparent transparent;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -20px;
+}

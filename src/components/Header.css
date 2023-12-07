@@ -1,0 +1,70 @@
+header {
+  background-color: var(--green);
+  padding: 32px 0 32px 0;
+}
+
+header > .container > img {
+  width: 140px;
+  height: 100%;
+}
+
+.header__brand {
+  display: flex;
+  gap: 100px;
+  /* border: 1px solid red; */
+  padding: 32px 0;
+  align-items: center; /* vertical */
+}
+
+.header__brand span {
+  width: 3px;
+  height: 130px;
+  background-color: var(--lime-2);
+}
+
+.header__desc {
+  flex: 1;
+}
+.header__desc h1 {
+  color: var(--lime-2);
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.header__desc p {
+  color: #a9e34b;
+  font-size: 22px;
+}
+
+.ppp-logo {
+  flex: 1;
+}
+.ppp-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 720px) {
+  .header__desc h1 {
+    font-size: 1.8rem;
+  }
+
+  .header__desc p {
+    font-size: 1rem;
+  }
+
+  .header__brand {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header__brand span {
+    display: none;
+  }
+}
