@@ -1,0 +1,29 @@
+.calculator__container {
+  margin-bottom: 2rem;
+}
+
+.calculator__container .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.calculator__container .container > :nth-child(1),
+.calculator__container .container > :nth-child(2) {
+  width: 100%;
+  border-radius: 40px;
+  padding: 32px;
+  min-height: 400px;
+}
+
+.calculator__container .container > :nth-child(2) {
+  background-color: var(--lime-2);
+}
+
+.calculator__container .container > :nth-child(1) {
+  background-color: var(--gray);
+}

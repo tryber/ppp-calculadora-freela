@@ -1,0 +1,36 @@
+.result {
+  display: flex;
+}
+
+.result__content {
+  width: 75%;
+  margin: 0 auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.result p {
+  color: var(--green);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.result h2 {
+  color: var(--lime-1);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.result h2:not(:last-child) {
+  margin-bottom: 78px;
+}
+
+.result span {
+  font-size: 24px;
+}
