@@ -4,11 +4,12 @@ import './FormSection.css';
 type FormSectionProps = {
   inputFields: InputField[];
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
 };
 
-function FormSection({ inputFields, onChange }: FormSectionProps) {
+function FormSection({ inputFields, onChange, onSubmit }: FormSectionProps) {
   return (
-    <form>
+    <form onSubmit={ onSubmit }>
       {inputFields.map((inputField) => (
         <div key={ inputField.id } className="input__group">
           <label htmlFor={ inputField.id }>{inputField.label}</label>
